@@ -3,7 +3,7 @@ class Utilities {
 
     static transformFileInArray(data) {
         const arrFile = data.split(' ').map(x => Number.parseInt(x, 10));
-        return arrFile;
+        return arrFile
     }
 }
 

@@ -6,24 +6,18 @@ class SortBySelection {
     }
 
     sort(data) {
-        let arrFile = Utilities.transformFileInArray(data);
+        let arrFile = data.split(' ').map(x => Number.parseInt(x, 10));
         for (let i = 0; i < arrFile.length - 1; i++) {
             let min = i;
             for (let j = i + 1; j < arrFile.length; j++) {
-                if (arrFile[j] < arrFile[min]) {
+                if (arrFile[i] < arrFile[min]) {
                     min = j;
-                    this.count += 1;
                 }
             }
             if (min != i) {
-                let temp = arrFile[i];
-                arrFile[i] = arrFile[min];
-                arrFile[min] = temp;
+                //swap(arrFile[i], arrFile[min]);
             }
         }
-        console.log('TRI PAR SELECTION : ', arrFile);
-        console.log('Nombre de comparaisons : ', this.count, '\n\n');
-        return arrFile;
     }
 }
 

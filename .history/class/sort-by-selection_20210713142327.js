@@ -16,9 +16,8 @@ class SortBySelection {
                 }
             }
             if (min != i) {
-                let temp = arrFile[i];
-                arrFile[i] = arrFile[min];
-                arrFile[min] = temp;
+                //swap(arrFile[i], arrFile[min]);
+                Utilities.swap(data);
             }
         }
         console.log('TRI PAR SELECTION : ', arrFile);

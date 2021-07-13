@@ -30,7 +30,7 @@ fs.readFile(fileName, 'utf8', (error, data) => {
     bubbleSort.sort(data);
     sortByInsertion.sort(data);
     sortBySelection.sort(data);
-    //quickSort.sort(data);
+    //sortByInsertion.sort(data);
 });
 
 

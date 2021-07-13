@@ -5,6 +5,12 @@ class Utilities {
         const arrFile = data.split(' ').map(x => Number.parseInt(x, 10));
         return arrFile;
     }
+
+    static swap(data, n) {
+        let temp = data[n];
+        data[n] = data[n - 1];
+        data[n - 1] = temp;
+    }
 }
 
 module.exports = Utilities;

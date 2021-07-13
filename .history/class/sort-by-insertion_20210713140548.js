@@ -6,7 +6,7 @@ class SortByInsertion {
     }
 
     sort(data) {
-        let arrFile = Utilities.transformFileInArray(data);
+        let arrFile = data.split(' ').map(x => Number.parseInt(x, 10));
         for (let i = 1; i < arrFile.length; i++) {
             let current = arrFile[i];
             let j = i - 1;

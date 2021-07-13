@@ -15,10 +15,9 @@ class SortBySelection {
                     this.count += 1;
                 }
             }
+            
             if (min != i) {
-                let temp = arrFile[i];
-                arrFile[i] = arrFile[min];
-                arrFile[min] = temp;
+                //swap(arrFile[i], arrFile[min]);
             }
         }
         console.log('TRI PAR SELECTION : ', arrFile);

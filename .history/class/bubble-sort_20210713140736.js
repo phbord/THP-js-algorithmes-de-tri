@@ -10,7 +10,8 @@ class BubbleSort {
         for (let i = 0; i < arrFile.length; i++) {
             for (let j = 0; j < arrFile.length; j++) {
                 if (arrFile[j] < arrFile[j - 1]) {
-                    this.swap(arrFile, j);
+                    //this.swap(arrFile, j);
+                    Utilities.transformFileInArray(data);
                     this.count += 1;
                 }
             }

@@ -7,7 +7,7 @@ class QuickSort {
 
     sort(fileName) {
         let arrFile = Utilities.transformFileInArray(data);
-        console.log('TRI RAPIDE : ', arrFile);
+        console.log('TRI PAR SELECTION : ', arrFile);
         console.log('Nombre de comparaisons : ', this.count, '\n\n');
         return arrFile;
     }

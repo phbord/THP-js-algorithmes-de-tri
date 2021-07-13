@@ -6,7 +6,8 @@ class BubbleSort {
     }
 
     sort(data) {
-        let arrFile = Utilities.transformFileInArray(data);
+        Utilities.
+        let arrFile = data.split(' ').map(x => Number.parseInt(x, 10));
         for (let i = 0; i < arrFile.length; i++) {
             for (let j = 0; j < arrFile.length; j++) {
                 if (arrFile[j] < arrFile[j - 1]) {
