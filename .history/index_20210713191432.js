@@ -28,7 +28,7 @@ fs.readFile(fileName, 'utf8', (error, data) => {
         console.error('error ====> ', error.message);
         return;
     }
-    console.log('DATA de', fileName, ' ====> ', data, '\n\n');
+    console.error('DATA de ',, ' ====> ', data, '\n\n');
     let arrFile = utilities.transformFileInArray(data);
     bubbleSort.sort(arrFile);
     sortByInsertion.sort(arrFile);
